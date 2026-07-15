@@ -1,0 +1,30 @@
+@media (max-width: 720px) {
+  .shell { padding: 0 18px; }
+  .topbar { height: 70px; }
+  .topbar nav { display: none; }
+  .brand { font-size: 21px; }
+  .wallet-button { max-width: 190px; overflow: hidden; }
+  .intro { min-height: 0; padding: 52px 0 36px; display: grid; gap: 34px; }
+  .intro h1 { font-size: clamp(44px, 14vw, 64px); letter-spacing: -3px; }
+  .network-card { min-width: 0; width: 100%; }
+  .workspace { grid-template-columns: 1fr; }
+  .fund-panel, .overview { padding: 25px 20px; }
+  .fund-panel { border-right: 0; border-bottom: 1px solid var(--border-soft); }
+  .form-row, .balances { grid-template-columns: 1fr; gap: 0; }
+  .balances div + div { margin-top: 20px; padding: 20px 0 0; border-left: 0; border-top: 1px solid var(--border-soft); }
+  input, .primary, .action-button, .proof-link, .address-copy { min-height: 44px; }
+  input { font-size: 16px; }
+  .ledger { padding-top: 58px; }
+  .ledger-head { align-items: start; }
+  .table-swipe { display: flex; align-items: center; gap: 5px; }
+  .table-wrap { margin-top: 10px; }
+  .how { grid-template-columns: 1fr; gap: 45px; padding: 80px 0; }
+  footer { gap: 20px; }
+  .delivery-modal { padding: 25px 20px; }
+  .modal-actions { flex-direction: column-reverse; }
+  .modal-actions .action-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}

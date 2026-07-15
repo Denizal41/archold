@@ -1,0 +1,51 @@
+.ledger { padding: 72px 0 0; }
+.ledger-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.ledger-head > span { color: var(--meta); font-size: 10px; }
+.table-swipe { display: none; margin: 18px 0 0; color: var(--meta); font: 500 10px "DM Mono"; }
+.table-wrap { margin-top: 20px; overflow-x: auto; border-top: 1px solid var(--border-strong); }
+table { width: 100%; min-width: 930px; border-collapse: collapse; text-align: left; }
+th { height: 39px; color: var(--meta); font: 500 9px "DM Mono"; letter-spacing: .08em; }
+td { height: 70px; padding-right: 16px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12px; vertical-align: middle; }
+td:first-child { width: 32%; color: var(--text); }
+td strong, td small { display: block; }
+td strong { font-size: 13px; }
+td small { margin-top: 4px; color: var(--meta); font-size: 10px; }
+.tag { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.status-0 { color: var(--warning); }
+.status-1 { color: var(--info); }
+.status-2 { color: var(--accent); }
+.status-3 { color: var(--refunded); }
+.row-actions { display: flex; align-items: center; gap: 7px; }
+.action-button {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-small);
+  padding: 0 11px;
+  background: var(--accent);
+  color: var(--accent-contrast);
+  font-size: 10px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.action-button.secondary { background: transparent; color: var(--accent); }
+.action-button:disabled { opacity: .6; cursor: wait; }
+.awaiting { color: var(--warning); font-size: 10px; white-space: nowrap; }
+.explorer-link, .proof-link { display: inline-flex; align-items: center; gap: 3px; color: var(--accent); font-weight: 800; }
+.proof-link, .address-copy { min-height: 30px; border: 0; padding: 0; background: transparent; }
+.proof-link { font-size: 10px; }
+.address-copy { display: inline-flex; align-items: center; gap: 5px; color: var(--text-muted); font: 500 10px "DM Mono"; }
+.empty-row { height: 100px; color: var(--meta); text-align: center; }
+.empty-row svg { margin-right: 7px; vertical-align: middle; }
+.modal-dialog { width: min(92vw, 510px); border: 0; border-radius: var(--radius-large); padding: 0; background: var(--surface); color: var(--text); box-shadow: 0 24px 80px var(--modal-shadow); }
+.modal-dialog::backdrop { background: var(--modal-backdrop); backdrop-filter: blur(3px); }
+.delivery-modal { padding: 32px; }
+.delivery-modal h2 { margin: 0; font-size: 25px; letter-spacing: -1px; }
+.delivery-modal > p:not(.eyebrow) { margin: 12px 0 0; color: var(--text-muted); font-size: 12px; line-height: 1.65; }
+.delivery-modal > svg { color: var(--warning); }
+.external-link-modal .eyebrow { margin-top: 18px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 28px; }
+.modal-actions .action-button { min-height: 44px; }
