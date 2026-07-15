@@ -2,6 +2,8 @@
 
 ArcHold is a deadline-aware milestone escrow dApp built for Arc Testnet. A payer funds work in USDC, a contractor delivers it, and the payment is settled transparently onchain.
 
+[Live site](https://archold.vercel.app) · [Open the app](https://archold.vercel.app/app) · [V3 contract on ArcScan](https://testnet.arcscan.app/address/0x8c8b0E1503Bb78C13a70e4Fa7DbD4594D6C4F2d3)
+
 > Testnet only. Do not use real funds or deploy this version to mainnet.
 
 ## Site map
@@ -149,6 +151,8 @@ VITE_ESCROW_ADDRESS=0x8c8b0E1503Bb78C13a70e4Fa7DbD4594D6C4F2d3
 The app deliberately disables escrow transactions until this public contract address is configured.
 
 ## Vercel deployment
+
+Production URL: [https://archold.vercel.app](https://archold.vercel.app)
 
 1. Import the GitHub repository in Vercel.
 2. Add `VITE_ESCROW_ADDRESS` as an environment variable.
