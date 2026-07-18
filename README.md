@@ -71,7 +71,7 @@ Re-check these values against the [official Arc documentation](https://docs.arc.
 - V1 address: `0x30a81e612ad2819582cbede491b55f4dbbb59156`
 - Explorer: [ArcHoldEscrow V1 on ArcScan](https://testnet.arcscan.app/address/0x30a81e612ad2819582cbede491b55f4dbbb59156)
 
-Both deployments were verified through the official Arc Testnet RPC. V2 adds onchain delivery proof and requires proof before payment release.
+The V3 source code is fully verified and published on ArcScan. The earlier V1/V2 deployment addresses were checked through the official Arc Testnet RPC; V2 introduced onchain delivery proof and proof-required release.
 
 ### Verified V3 end-to-end demo
 
